@@ -33,9 +33,12 @@ void BST::dtraverse(Vertex *V)
 // PURPOSE: Show elements in IN order traversal knowing the Root
 void BST::displayQueue()
 {
+  cout << "Ready Queue:" << endl;
   if(Root == NULL)
-    cout <<"EMPTY QUEUE" << endl;
-  cout << "Ready Queue: " << endl;
+    {   
+      cout <<"EMPTY QUEUE" << endl;
+      return;
+    }
   INorderTraversal(Root);
   cout << endl;
 }
@@ -175,7 +178,7 @@ elem_t BST::findMax(Vertex *V)
 elem_t BST::removeHighestProc()
 {
   Vertex *V = Root;
-  Vertex *Parent = V; 
+  Vertex *Parent = V;
   if (V->Left != NULL)//Root has left children
     V = V->Left;
   else if((Parent->Left == NULL) && (Parent->Right != NULL)){//Root has no left children
@@ -189,6 +192,7 @@ elem_t BST::removeHighestProc()
   else if((Parent->Left == NULL) && (Parent->Right == NULL)){//Root has no children
     elem_t temp = Parent->Elem;
     delete Parent;
+    Root = NULL;
     SIZE--;
     return temp;
   }
