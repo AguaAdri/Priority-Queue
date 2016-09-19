@@ -1,8 +1,13 @@
-//NAMES:      Adrian Aguayo, Richard Casillas
-//DATE:       17 SEP 2016
-//COURSE:     CS433 Operating Systems
-//ASSIGNMENT: #1 (Priority Queue of Processes)
-//DESCRIPTION: 
+//NAMES:       Adrian Aguayo, Richard Casillas
+//DATE:        17 SEP 2016
+//COURSE:      CS433 Operating Systems
+//ASSIGNMENT:  #1 (Priority Queue of Processes)
+//DESCRIPTION: This program will implement a process control block in order to manage a priority queue of processes.
+//             It utilizes a PCB(process control block) object which has a state, ID, Priority, and a position. These PBC 
+//             objects are stored in a vector of PBC's. A ready queue is then implemented through the use of an ordered 
+//             binary search tree. The PBC objects are then copied from the PBC table into the ready queue(binary search tree). 
+//             Objects with the highest priority are always removed from the ready queue first and new PBC's are added to
+//             the tree in their correct locations. 
 #include "PCB.h"
 #include "PCBTable.h"
 #include "readyQueue.h"
