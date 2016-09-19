@@ -1,3 +1,8 @@
+//NAMES:      Adrian Aguayo, Richard Casillas
+//DATE:       17 SEP 2016
+//COURSE:     CS433 Operating Systems
+//ASSIGNMENT: #1 (Priority Queue of Processes)
+//DESCRIPTION: 
 #include "PCB.h"
 #include "PCBTable.h"
 #include "readyQueue.h"
