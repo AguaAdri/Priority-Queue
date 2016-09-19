@@ -4,6 +4,13 @@ NAMES:       Adrian Aguayo, Richard Casillas
 DATE:        17 SEP 2016
 COURSE:      CS433 Operating Systems
 ASSIGNMENT:  #1 (Priority Queue of Processes)
+COMPILATION: In order to compile the program through UNIX, navigate to the desired directory with the program files.
+             In the command prompt enter:
+             
+             make 
+             
+             This will compile, optimize, and create an executable file named: executable
+             To run the program enter: ./executable
 DESCRIPTION: This program will implement a process control block in order to manage a priority queue of processes.
              It utilizes a PCB(process control block) object which has a state, ID, Priority, and a position. These PBC 
              objects are stored in a vector of PBC's. A ready queue is then implemented through the use of an ordered 
